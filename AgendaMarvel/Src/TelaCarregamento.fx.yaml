@@ -1,0 +1,70 @@
+TelaCarregamento As screen:
+    OnVisible: |
+        =UpdateContext({
+            LoadingText: "Carregando",
+            Dots: "."
+        })
+
+    Image14_2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Height: =768
+        Image: =Carregando
+        ImagePosition: =ImagePosition.Center
+        Width: =1366
+        ZIndex: =1
+
+    Image15_2 As image:
+        Height: =768
+        Image: ='pngwing.com (1)'
+        Width: =791
+        ZIndex: =2
+
+    Video2 As videoPlayback:
+        AutoStart: =true
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =491
+        Loop: =true
+        Media: =ASDASDASDASDA
+        ShowControls: =false
+        Width: =572
+        X: =734
+        Y: =194
+        ZIndex: =3
+
+    Image17 As image:
+        Height: =197
+        Image: ='marvel-logo-4'
+        Width: =535
+        X: =734
+        Y: =23
+        ZIndex: =4
+
+    LoadingLabel As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =83
+        Size: =30
+        Text: =LoadingText
+        Width: =296
+        X: =872
+        Y: =615
+        ZIndex: =5
+
+    TimerLoading As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: =Navigate(TelaUsuario)
+        OnTimerStart: |
+            =UpdateContext({
+                Dots: If(
+                    Dots = "...", ".",
+                    Dots & "."
+                ),
+                LoadingText: "Carregando" & Dots
+            })
+        Visible: =false
+        X: =698
+        Y: =439
+        ZIndex: =6
+

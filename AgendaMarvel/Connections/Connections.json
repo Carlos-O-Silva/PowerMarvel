@@ -1,0 +1,66 @@
+{
+  "71bf7817-a35a-4d57-ac27-2fafd23b582d": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1646/1.0.1646.3354/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "c845e449-a410-411c-ac09-6bb7abdbc488": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "c845e449-a410-411c-ac09-6bb7abdbc488"
+        }
+      }
+    },
+    "datasets": {
+      "b!fRsQJ5P-G06f4U5-_PnaOoHKHO8BKNFJl6SOnnXeklhhDTWrDTnISayOSn5mbR8u.01QRZE2T6MTOSMSRQR4NHYKQKFOB66MJ4E": {
+        "dataSources": {
+          "db_equipes": {
+            "tableName": "db_equipes"
+          },
+          "db_marvel": {
+            "tableName": "db_marvel"
+          },
+          "db_marvel3": {
+            "tableName": "db_marvel3"
+          },
+          "tbl_dub": {
+            "tableName": "tbl_dub"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "db_equipes",
+      "db_marvel",
+      "db_marvel3",
+      "tbl_dub"
+    ],
+    "dependencies": {
+      "fileSource": "c845e449-a410-411c-ac09-6bb7abdbc488"
+    },
+    "dependents": [],
+    "id": "71bf7817-a35a-4d57-ac27-2fafd23b582d"
+  },
+  "c845e449-a410-411c-ac09-6bb7abdbc488": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1647/1.0.1647.3361/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "71bf7817-a35a-4d57-ac27-2fafd23b582d"
+    ],
+    "id": "c845e449-a410-411c-ac09-6bb7abdbc488"
+  }
+}

@@ -1,0 +1,110 @@
+TelaLogin As screen:
+
+    Fundo As image:
+        Height: =766
+        Image: =inicial
+        Width: =1366
+        ZIndex: =1
+
+    MiranhaPrincipal As image:
+        Height: =719
+        Image: ='imagem_2023-08-26_164427033-removebg-preview'
+        ImagePosition: =ImagePosition.Fill
+        Width: =914
+        Y: =49
+        ZIndex: =2
+
+    Botao As image:
+        Height: =143
+        Image: ='imagem_2023-08-26_175452211'
+        Width: =300
+        X: =914
+        Y: =388
+        ZIndex: =3
+
+    btnLogin As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =68
+        HoverFill: =
+        OnSelect: |
+            =Navigate(TelaCarregamento)
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(184, 0, 0, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(184, 0, 0, 1)
+        Text: |
+            =If(
+                Language = "POR",
+                "Entrar",
+                If(
+                    Language = "ENG",
+                    "Login"
+                )
+            )
+        Width: =300
+        X: =914
+        Y: =425
+        ZIndex: =4
+
+    BandeiraBR As image:
+        Height: =44
+        Image: ='Flag_of_Brazil.svg'
+        Width: =71
+        X: =1198
+        Y: =677
+        ZIndex: =7
+
+    BandeiraENG As image:
+        Height: =54
+        Image: ='bandeira-dos-estados-unidos'
+        Width: =74
+        X: =1277
+        Y: =672
+        ZIndex: =8
+
+    btnENG As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =44
+        HoverFill: =
+        OnSelect: |
+            =Set(Language, "ENG")
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Text: =""
+        Width: =74
+        X: =1277
+        Y: =677
+        ZIndex: =9
+
+    btnBR As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverFill: =
+        OnSelect: |
+            =Set(Language, "POR")
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Size: =0
+        Text: =""
+        Width: =71
+        X: =1198
+        Y: =677
+        ZIndex: =10
+

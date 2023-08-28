@@ -1,0 +1,20 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2023-07-19T17:10:49.7180000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "EquipDub": "EquipDub"
+    },
+    "DatasetName": "b!fRsQJ5P-G06f4U5-_PnaOoHKHO8BKNFJl6SOnnXeklhhDTWrDTnISayOSn5mbR8u.01QRZE2T6MTOSMSRQR4NHYKQKFOB66MJ4E",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "tbl_dub",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

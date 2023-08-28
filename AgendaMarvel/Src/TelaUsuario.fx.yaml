@@ -1,0 +1,160 @@
+TelaUsuario As screen:
+
+    Image18 As image:
+        Height: =768
+        Image: ='3'
+        Width: =1366
+        ZIndex: =1
+
+    btnConsulta As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =101
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: |
+            =Navigate(ConsultarUser)
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(235, 32, 36, 0.01)
+        Size: =25
+        Text: |
+            =If(
+                Language = "POR",
+                "Consultar Herói",
+                If(
+                    Language = "ENG",
+                    "View Hero"
+                )
+            )
+        Width: =400
+        X: =699
+        Y: =540
+        ZIndex: =3
+
+    FotoUsuario As image:
+        Height: =301
+        Image: =User().Image
+        RadiusBottomLeft: =180
+        RadiusBottomRight: =180
+        RadiusTopLeft: =180
+        RadiusTopRight: =180
+        Width: =301
+        X: =729
+        Y: =24
+        ZIndex: =4
+
+    BemVindo As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Lato Black'
+        Height: =103
+        Size: =20
+        Text: |
+            =If(
+                Language = "POR",
+                "Bem vindo!! " & User().FullName ,
+                If(
+                    Language = "ENG",
+                    "Welcome!! " & User().FullName 
+                )
+            )
+        Width: =498
+        X: =665
+        Y: =325
+        ZIndex: =5
+
+    btnCadastrar As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =98
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: |
+            =NewForm(Form1); Navigate(CadastroEditUser)
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(235, 32, 36, 0.01)
+        Size: =25
+        Text: |+
+            =
+            
+            If(
+                Language = "POR",
+                "Cadastrar herói",
+                If(
+                    Language = "ENG",
+                    "Rigister Hero"
+                )
+            )
+            
+        Width: =404
+        X: =717
+        Y: =433
+        ZIndex: =6
+
+    BandeiraBR_1 As image:
+        Height: =44
+        Image: ='Flag_of_Brazil.svg'
+        Width: =71
+        X: =1198
+        Y: =677
+        ZIndex: =7
+
+    BandeiraENG_1 As image:
+        Height: =54
+        Image: ='bandeira-dos-estados-unidos'
+        Width: =74
+        X: =1277
+        Y: =672
+        ZIndex: =8
+
+    btnENG_1 As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =44
+        HoverFill: =
+        OnSelect: |
+            =Set(Language, "ENG")
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Text: =""
+        Width: =74
+        X: =1277
+        Y: =677
+        ZIndex: =9
+
+    btnBR_1 As button:
+        BorderColor: =
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverFill: =
+        OnSelect: |
+            =Set(Language, "POR")
+        PaddingLeft: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Size: =0
+        Text: =""
+        Width: =71
+        X: =1198
+        Y: =677
+        ZIndex: =10
+
