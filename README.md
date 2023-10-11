@@ -39,4 +39,4 @@ O PowerMarvel é uma solução de coleta e análise de dados que utiliza o Power
 
 Assista a um vídeo demonstrativo deste projeto no YouTube: (https://youtu.be/c9g2SPh9ISw)
 
-Este README oferece informações detalhadas para ajudar os usuários a entender e utilizar o seu projeto. Para mais informações técnicas ou detalhes específicos, consulte a documentação ou recursos adicionais vinculados.
+
